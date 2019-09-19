@@ -1,9 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title><h4>FINIXER</h4></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-content color="otro2" padding>
+    <form #form="ngForm" (ngSubmit)="login(form)">
+      <ion-grid>
+        <ion-row color="otro2" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Accede</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input name="email" type="email" placeholder="Correo" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="Contraseña" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button size="large" shape="round" type="submit" [disabled]="form.invalid" expand="block">Entrar</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+<div style="color: #fff" text-center>
+    Si no tienes una cuenta, por favor <a routerLink='/register'>registrate</a> aqui 
+</div>
+      </ion-grid>
+    </form>
+  </ion-content>
 </ion-content>

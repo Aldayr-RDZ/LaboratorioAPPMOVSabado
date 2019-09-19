@@ -1,0 +1,19 @@
+ion-item{
+    --background: #15d0b3;
+    --color: #fff;
+}
+
+ion-content {
+    $color:(
+        --otro: #15d0b3
+    );
+}
+
+ion-content{
+    --background: #15d0b3;
+}
+
+ion-button{
+    --background: #fff;
+    --color: #15d0b3;
+}
