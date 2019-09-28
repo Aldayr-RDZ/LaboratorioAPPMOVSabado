@@ -1,16 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title><h4>FINIXER</h4></ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
-  <ion-content color="otro2" padding>
+  <ion-content color="secondary" padding>
     <form #form="ngForm" (ngSubmit)="login(form)">
       <ion-grid>
-        <ion-row color="otro2" justify-content-center>
+        <ion-row color="primary" justify-content-center>
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
             <div text-center>
+              <h1 style="font-size:50px"><b>FINIXER</b></h1>
+              <br> <br> <br>
               <h3>Accede</h3>
             </div>
             <div padding>
@@ -22,12 +19,12 @@
               </ion-item>
             </div>
             <div padding>
-              <ion-button size="large" shape="round" type="submit" [disabled]="form.invalid" expand="block">Entrar</ion-button>
+              <ion-button size="large" shape="round" type="submit" [disabled]="form.invalid" expand="block"><b>Entrar</b></ion-button>
             </div>
           </ion-col>
         </ion-row>
 <div style="color: #fff" text-center>
-    Si no tienes una cuenta, por favor <a routerLink='/register'>registrate</a> aqui 
+    Si no tienes una cuenta, por favor <a routerLink='/registrar'>registrate</a> aqui 
 </div>
       </ion-grid>
     </form>
